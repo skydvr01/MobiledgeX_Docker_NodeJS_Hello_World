@@ -1,0 +1,21 @@
+{
+  "name": "MobiledgexX-Hello-World",
+  "version": "0.0.1",
+  "description": "MobiledgeX Hello World HTTP server",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/skydvr01/hello_world/"
+  },
+  "keywords": [
+    "node",
+    "docker",
+    "dockerfile"
+  ],
+  "author": "alexander.donn@mobiledgex.com",
+  "license": "MobiledgeX"
+}
