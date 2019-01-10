@@ -4,7 +4,8 @@ var http = require('http');
 // configure our HTTP server
 var server = http.createServer(function (request, response) {
   response.writeHead(200, {"Content-Type": "text/plain"});
-  response.end("Hello MobiledgeX.com\n");
+  response.write(index.html);
+  response.end();
 });
 
 // listen on localhost:8000

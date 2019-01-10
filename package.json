@@ -2,11 +2,12 @@
   "name": "MobiledgexX-Hello-World",
   "version": "0.0.1",
   "description": "MobiledgeX Hello World HTTP server",
-  "main": "main.js",
+  "main": "htmlserver.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node main.js"
+    "start": "http-server -p 8000"
   },
+  "dependencies": {"http-server" : "*"},
   "repository": {
     "type": "git",
     "url": "https://github.com/skydvr01/hello_world/"
