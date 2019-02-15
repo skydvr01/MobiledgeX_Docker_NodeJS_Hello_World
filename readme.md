@@ -50,6 +50,7 @@ Open a terminal and navigate to the directory that contains the files you just c
 Format -- | docker build . -t <app name>:<version number> |
 
 ["docker build” command reference](https://docs.docker.com/engine/reference/commandline/build/)
+    
     * “-t” -- Name the container “mobiledex_hello_world and tag the container with the tag of “latest”
     * Reference -- [tagging containers](https://stackoverflow.com/questions/41984399/denied-requested-access-to-the-resource-is-denied-docker) -- As a good practice, avoid using the word "latest" when tagging your container. Insteal, use numbers and letters so that you ensure Docker will pick up the file changes. 
 
