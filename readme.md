@@ -45,7 +45,7 @@ Reference Documentation:
 ## Step 3 -- Compile/Build Docker Commands ##
 Open a terminal and navigate to the directory that contains the files you just created. Then, type the following command:  
 
-' docker build . -t mobiledgex_hello_world:latest '
+` docker build . -t mobiledgex_hello_world:latest `
 
 Format -- | docker build . -t <app name>:<version number> |
 
@@ -56,7 +56,7 @@ Format -- | docker build . -t <app name>:<version number> |
 ## Step 4 -- Run Docker Image Locally ##
 This command is to run the container that you just build locally to see if the container was built properly and/or that it runs. 
 
-' docker run -it -p 8000:8000 mobiledgex_hello_world:latest '
+` docker run -it -p 8000:8000 mobiledgex_hello_world:latest `
 
 "docker run" command reference
 
