@@ -42,8 +42,8 @@ Reference Documentation:
         * "index.html" -- This file can be anything that you would like and only exists to visually show that y
 * Optional -- download all files from the MobiledgeX Hello World github repository
 
-## Step 3 -- Compile/Build Docker Commands ##
-Open a terminal and navigate to the directory that contains the files you just created. Then, type the following command:  
+## Step 3 -- Build the Demo ##
+Open a terminal and navigate to the directory that contains the files you just created. Then, type the following command (everything that is highlighted in gray):  
 
 ` docker build . -t mobiledgex_hello_world:latest `
 
@@ -53,13 +53,11 @@ Format -- | docker build . -t <app name>:<version number> |
     * “-t” -- Name the container “mobiledex_hello_world and tag the container with the tag of “latest”
     * Reference -- [tagging containers](https://stackoverflow.com/questions/41984399/denied-requested-access-to-the-resource-is-denied-docker) -- As a good practice, avoid using the word "latest" when tagging your container. Insteal, use numbers and letters so that you ensure Docker will pick up the file changes. 
 
-## Step 4 -- Run Docker Image Locally ##
-This command is to run the container that you just build locally to see if the container was built properly and/or that it runs. 
+## Step 4 -- Run the Demo! ##
+This command is to run the container that you just built in the last step (everything that is highlighted in gray): 
 
 ` docker run -it -p 8000:8000 mobiledgex_hello_world:latest `
 
-"docker run" command reference
-
-“-it” or “interactive” -- run the image interactively with a pseudo-tty
-
-“-p” or “-publish” -- map the port 8000 in the container to port 8000 of your machine
+    * ["docker run" command reference](https://docs.docker.com/engine/reference/commandline/run/)
+    * “-it” or “interactive” -- run the image interactively with a pseudo-tty
+    * “-p” or “-publish” -- map the port 8000 in the container to port 8000 of your machine
