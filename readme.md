@@ -26,9 +26,9 @@ Install the Docker software on your system:
     * [Install Docker Software on Windows](https://docs.docker.com/docker-for-windows/)
 
 Follow [this tutorial](https://docs.docker.com/docker-hub/) for the following:
-    * Create your Docker account @ https://hub.docker.com/ 
-    * Create your first Docker “repo”
-    * Make sure to stop at Step 3. Do not complete Step 4 of the Docker Setup Tutorial as we will save that for later
+* Create your Docker account @ https://hub.docker.com/ 
+* Create your first Docker “repo”
+* Make sure to stop at Step 3. Do not complete Step 4 of the Docker Setup Tutorial as we will save that for later
 
 Reference Documentation:
 *[]()
