@@ -25,16 +25,17 @@ Install the Docker software on your system:
     * [Install Docker Software on Mac](https://docs.docker.com/docker-for-mac/)
     * [Install Docker Software on Windows](https://docs.docker.com/docker-for-windows/)
 
-Follow [this tutorial](https://docs.docker.com/docker-hub/) for the following:
+[This tutorial](https://docs.docker.com/docker-hub/) will cover the basics for the following:
 * Create your Docker account @ https://hub.docker.com/ 
-* Create your first Docker “repo”
+* Create your first Docker “repo” on the Docker hosted [repository](https://docs.docker.com/glossary/?term=repository)
 * Make sure to stop at Step 3. Do not complete Step 4 of the Docker Setup Tutorial as we will save that for later
 
 Reference Documentation:
-*[]()
-    *[Docker Tutorial - What is Docker & Docker Containers, Images, etc?](https://www.youtube.com/watch?v=pGYAg7TMmp0)
+I found these additional youtube videos and blog guides helpful: 
+*[Docker Tutorial - What is Docker & Docker Containers, Images, etc?](https://www.youtube.com/watch?v=pGYAg7TMmp0)
 
 ## Step 2 -- Create the Demo Files ##
+There are amazingly few steps required to create a Docker image. You really only need a file called "dockerfile" to tell Docker how it needs to function and then your codebase. 
 * Create a temporary folder
     * Create the following files within the temporary folder
         * “dockerfile” -- This file has no extension. This file lists Docker dependencies and tells Docker how to load your container
@@ -45,7 +46,7 @@ Reference Documentation:
 ## Step 3 -- Build the Demo ##
 Open a terminal and navigate to the directory that contains the files you just created. Then, type the following command (everything that is highlighted in gray):  
 
-` docker build . -t mobiledgex_hello_world:latest `
+` docker build . -t mobiledgex_hello_world:1 `
 
 Format -- | docker build . -t <app name>:<version number> |
 
@@ -57,8 +58,10 @@ Format -- | docker build . -t <app name>:<version number> |
 ## Step 4 -- Run the Demo! ##
 This command is to run the container that you just built in the last step (everything that is highlighted in gray): 
 
-` docker run -it -p 8000:8000 mobiledgex_hello_world:latest `
+` docker run -it -p 8000:8000 mobiledgex_hello_world:1 `
 
     * ["docker run" command reference](https://docs.docker.com/engine/reference/commandline/run/)
     * “-it” or “interactive” -- run the image interactively with a pseudo-tty
     * “-p” or “-publish” -- map the port 8000 in the container to port 8000 of your machine
+
+Finally, open a browser window and go to localhost:8000 to verify that the Docker container did indeed load.
