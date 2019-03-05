@@ -1,13 +1,16 @@
-# MobiledgeX Docker Hello World #
+# MobiledgeX Docker NodeJS Hello World
 
-This tutorial walks through the process of creating a simple app that is "dockerized." You would want to dockerize your application because not only does it help with your application development process and pipeline, it is a requirement for deploying applications to the MobiledgeX platform.
+If you are tired of struggling with installing compilers or are just starting out in the wonderful world of programming, this is the tutorial for you. We use the Docker software in an alternative way that helps you develop faster and more consistently. By using Docker in combination with your desired programming langague, you can create, manage and share your software much more easily. 
 
-(https://docs.docker.com/engine/examples/) A handy reference page for those of you new to Docker is the glossary page (https://docs.docker.com/glossary/) on the docker.com website. There you can find clear definitions of new vocabulary to help speed up the learning process.
+While Docker is a tool that is used to create standarized development and deployment containers for production software, it's uses go far beyond simply an enterprise deployment tool. Upon completion of this tutorial, you will have a working process where you can create, test and deploy code without having to install programming related software and struggle with compability and installation issues.
 
-## Tutorial Requirements ##
+If you are new to docker, [this page](https://docs.docker.com/engine/examples/) is a handy reference glossary (https://docs.docker.com/glossary/) on the docker.com website. There you can find a comprehensive vocabulary list to help speed up the learning process.
 
-This tutorial assumes the following:
-*You are using MacOS
+## Prerequisites
+For this tutorial, you will need:
+
+*A computer running MacOS xx.xx.xx 
+*[Chrome browser]() installed
 *Know how to open a [terminal window](https://www.wikihow.com/Open-a-Terminal-Window-in-Mac)
 *Know how to [navigate within a terminal window](https://www.youtube.com/watch?v=Vhcx4KJbtes)
 *Have a basic understanding of programming
